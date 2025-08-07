@@ -1,2 +1,67 @@
 #Basic 2
 
+# Sequence Alignment & Mapping
+BWA (Burrows-Wheeler Aligner): Used for short-read alignment.
+Bowtie2: Another tool for aligning short DNA sequences.
+STAR: A tool for aligning RNA-seq data.
+Minimap2: Fast sequence alignment tool for various types of sequencing data.
+
+# Variant Calling:
+GATK (Genome Analysis Toolkit): Popular for variant discovery and genotyping.
+Samtools: Used for manipulating alignments and calling variants from BAM files.
+bcftools: A set of utilities for working with VCF and BCF files.
+
+# Data Preprocessing
+FastQC: A tool for quality control of sequencing data.
+Trimmomatic: Used for trimming adapter sequences from reads.
+Cutadapt: Another tool for removing adapters and low-quality reads.
+Seqtk: A toolkit for processing sequences in FASTA or FASTQ format.
+
+#  Visualization:
+IGV (Integrative Genomics Viewer): A popular tool for visualizing genomic data like BAM, VCF, and other genomic formats.
+Genome Browser: UCSC and Ensembl genome browsers are frequently used in genomics for exploring reference genomes.
+
+# Data Management:
+GNU Parallel: A tool for parallelizing tasks across multiple processors or machines.
+Docker: For containerizing genomic workflows, ensuring reproducibility across different systems.
+Snakemake: A workflow management system used to build and execute reproducible pipelines.
+
+Transcriptomics:
+Cufflinks: Used for RNA-Seq data analysis.
+DESeq2: Used for differential expression analysis from RNA-Seq data.
+StringTie: An RNA-seq assembler that is useful for transcript assembly and quantification.
+
+Metagenomics:
+QIIME 2: A tool for microbiome analysis.
+MetaPhlAn: Used for profiling microbial communities based on metagenomic sequencing data.
+
+Bioinformatics Libraries:
+Biopython: A library for bioinformatics tasks, such as parsing bioinformatics file formats.
+Pandas: Python library for data manipulation, often used for genomic data analysis.
+NumPy/Scipy: Libraries for numerical computations.
+
+
+Machine Learning:
+scikit-learn: A machine learning library in Python, useful for genomic data classification and clustering tasks.
+TensorFlow/Keras: For more advanced machine learning or deep learning tasks applied to genomic data.
+
+Cloud Computing:
+AWS/Bioinformatics on the Cloud
+Many cloud providers, like AWS and Google Cloud, offer virtual machines preconfigured with bioinformatics tools, which are ideal for genomics workloads that require substantial computational power.
+
+Genomics Workflows & Automation
+Nextflow: A workflow management system designed for scalable and reproducible scientific workflows. It integrates well with Docker and Singularity containers.
+CWL (Common Workflow Language): Another popular workflow specification for data analysis in genomics, ensuring portability and scalability.
+Galaxy: A web-based platform for bioinformatics analysis, enabling non-programmers to use bioinformatics tools easily, but it also supports command-line usage via Linux.
+
+
+
+
+
+
+
+
+
+
+
+
