@@ -1,0 +1,33 @@
+#Get Comfortable with the Command Line
+Start every session by running pwd to know where you are.
+Use TAB to auto-complete file and folder names — it saves time and avoids typos.
+Use the up arrow (↑) to repeat previous commands.
+
+#Practice with Real Genomic Data
+Download small FASTA/FASTQ files from NCBI or Ensembl.
+Use head, less, and wc -l to inspect and analyze file structure.
+
+# Stay Organized
+Create structured directories for projects:
+project/, data/, results/, scripts/
+Avoid working directly in system directories or ~/.
+
+# Understand File Extensions
+.fa or .fasta: DNA/protein sequences
+.fq or .fastq: Sequencing reads (contains quality scores)
+.bam, .sam: Aligned reads
+.vcf: Variant call format
+ Use file filename to check what kind of file it really is.
+
+# Be Careful with Large Files
+Don’t use cat on files >100MB — use less or head.
+Redirect long output using > or >>:
+ls -l > file_list.txt
+
+# Keep a Command Log
+Save useful commands in a text file: notes.txt
+Helps with reproducibility and writing analysis scripts later.
+
+# Use man and --help
+Use man ls or ls --help to learn what options are available for each command.
+
