@@ -1,0 +1,128 @@
+#Basic 1
+
+# Linux Distributions Popular in Genomics
+-Ubuntu: A user-friendly distribution, often preferred for bioinformatics.
+-CentOS/RHEL: Often used in larger, more enterprise-based genomic pipelines.
+-Debian: Known for stability and security, Debian-based systems (like Ubuntu) are common in genomics.
+-Bio-Linux: A specialized Linux distribution that comes preloaded with many bioinformatics tools.
+
+# Setting Up a Genomics Environment
+-When setting up a genomics environment on Linux, consider these steps:
+-Install essential bioinformatics tools via apt, yum, or using conda environments.
+-Set up a workflow system (Nextflow, Snakemake) to automate data analysis tasks.
+-Use Docker or Singularity containers to ensure that your analysis is portable and reproducible.
+-Leverage high-performance computing (HPC) clusters or cloud environments if your data scales.
+
+
+# Typical Structure
+1. Applications (e.g., gedit, Python scripts)
+2. Shell (e.g., Bash terminal – where you type commands)
+3. Kernel (core OS that communicates with hardware)
+4. Hardware (RAM, CPU, drives, etc.)
+** Application → Shell → Kernel → Hardware./ Commands go: Shell → Kernel → Binary → Hardware. 
+
+# Four Key Tools in Linux
+1. Text Editors – gedit, Vim, Nano
+2. Compilers – GCC, etc., for programming
+3. File System Commands – ls, cd, cp, etc.
+4. Text Processing Tools – awk, sed, grep for analyzing structured data
+
+# Shell Scripts
+-A shell script is a file containing a sequence of Linux commands (e.g., sh, bash, zsh, etc)
+-Bash (short for Bourne Again SHell) is a type of shell — basically, a program with the .sh extension 
+that lets you interact with your computer by typing commands.
+-All bash scripts are shell scripts, but not vice-versa
+
+# Remember
+-Terminal = program window (the interface)
+-Shell = the program running inside the terminal (process interpreting commands)
+-Command line = the place inside the shell where you type commands
+-Bash = a type of shell
+-Kernel= operating system that manages hardware 
+
+# Path
+A path tells the system where a file or directory is located.
+Absolute Path: Starts from the root /
+→ Example: /home/user/Documents/file.txt
+Relative Path: Starts from your current location
+→ Example: ../Documents/file.txt
+
+# Directory
+A directory is like a folder that holds files and other directories.
+/	    Root of the filesystem
+/home	Users' personal folders
+/etc	System configuration files
+/var	Variable data (like logs)
+/bin	Essential system commands
+/tmp	Temporary files
+
+# Permission
+Linux controls who can do what to a file or directory using permissions.
+r = read, w = write, x = execute
+-rwxr-xr-- 1 user group 1234 Aug 7 12:00 script.sh
+ rwx → owner can read, write, execute
+ r-x → group can read and execute
+ r-- → others can only read
+
+# Navigation & Filesystem
+pwd — show current directory path
+ls — list files; ls -l for detailed list
+cd — change directory (cd ~ to go home, cd - to previous directory)
+mkdir mydir — create a directory
+rmdir mydir — remove empty directory
+touch myfile — create an empty file or update the timestamp
+cp source dest — copy files; cp -r dir newdir copies directories recursively
+mv oldname newname — move or rename file/directory
+rm file — remove file; rm -rf dir remove directory and contents (use with caution!)
+
+# Viewing & Editing Files
+cat file — display file contents
+more file — view file page-by-page
+head file — first 10 lines
+tail file — last 10 lines
+tail -f file — live output as file grows
+nano file — open text editor (Ctrl+X to exit)
+
+# Processes & System Info
+top — view running processes and system resource use
+date — show current date/time
+time command — measure how long a command takes to run
+CTRL-C — kill the current running process
+
+# Searching & Redirection
+grep pattern files — search text for a pattern
+command > file — redirect command output to a file (overwrite)
+command >> file — append command output to a file
+command1 | command2 — pipe output of command1 into command2
+
+# Compression & Archiving
+tar -zcf archive.tgz dir — create compressed archive
+tar -zxf archive.tgz — extract compressed archive
+gzip file — compress file
+gunzip file.gz — decompress file
+
+# Paths & Wildcards
+Absolute path starts with / (e.g., /home/user)
+Relative path examples: . (current directory), .. (parent directory), ~ (home directory)
+Wildcards: * matches any string, [abc] matches any one character in brackets
+
+# Remote Access & Package Management
+ssh servername — log into remote server
+apt install package — install package on Debian/Ubuntu
+conda install package — install package via Conda (bioinformatics environments)
+pip install package — install Python package
+Be extra careful with rm -rf and wildcards — they can delete important files irreversibly!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
