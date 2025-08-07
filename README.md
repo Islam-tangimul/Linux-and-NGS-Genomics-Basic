@@ -1,5 +1,6 @@
 # Linux-and-NGS-Genomics-Basic
-Tools, scripts, and workflows for Linux-based genomic data analysis
+Linux/Unix systems are heavily used in bioinformatics due to their powerful shell capabilities, command-line tools, and efficient data handling.
+Most bioinformatics tools are developed for Linux, particularly those used in servers and high-performance computing environments.
 
 # Linux and NGS Genomics
 This repository contains tools, scripts, and workflows for analyzing genomic data using Linux-based environments. It focuses on Next-Generation Sequencing (NGS) technologies and includes practical examples for common bioinformatics tasks.
